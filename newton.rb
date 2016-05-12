@@ -30,7 +30,7 @@ class Array
 
 	#Произведение
 	def pr()
-		a = 0
+		a = 1
 		for i in (0...self.length)
 			a *= self[i]
 		end
@@ -69,7 +69,7 @@ end
 def R(fnk, x, k)
 	a = Array.new(11) {|i| x - $xi[i]}
 	# p a
-	fnk * a.pr / fact(k)
+	(fnk * a.pr / fact(k)).abs
 end
 
 #формула Ньютона
